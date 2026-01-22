@@ -217,6 +217,9 @@ installDeepCoolDriver
 configure_git
 "${REPO}/bin/hyprdev-setup-fingerprint"
 
+konsave -i "${REPO}/devin.knsv"
+konsave -a devin
+
 sudo systemctl enable reflector
 sudo systemctl enable bluetooth
 sudo systemctl enable sddm
@@ -232,3 +235,9 @@ cat <<"EOF"
 EOF
 echo "and thank you for choosing my config :)"
 echo -e "${NONE}"
+
+if gum confirm "Reboot System?"; then
+  systemctl reboot
+else
+  exit 0
+fi
