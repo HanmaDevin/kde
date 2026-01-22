@@ -221,6 +221,7 @@ configure_git
 
 sudo systemctl enable reflector
 sudo systemctl enable bluetooth
+sudo systemctl enable sddm
 
 echo -e "${MAGENTA}"
 cat <<"EOF"
