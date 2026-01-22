@@ -5,3 +5,5 @@ packages=("ark" "dolphin" "dolphin-plugins" "dragon" "elisa" "ffmpegthumbs" "iso
 for pkg in "${packages[@]}"; do
   sudo pacman -Rns --noconfirm "${pkg}"
 done
+
+yay -Rns konsave

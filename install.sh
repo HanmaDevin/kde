@@ -32,7 +32,7 @@ install_helix_utils() {
 }
 
 installAurPackages() {
-  local packages=("google-chrome" "visual-studio-code-bin" "xpadneo-dkms" "openvpn3" "xwayland-satellite" "localsend-bin" "openvpn-update-systemd-resolved" "lazydocker" "ufw-docker" "qt-heif-image-plugin" "luajit-tiktoken-bin" "vesktop")
+  local packages=("google-chrome" "konsave" "visual-studio-code-bin" "xpadneo-dkms" "openvpn3" "xwayland-satellite" "localsend-bin" "openvpn-update-systemd-resolved" "lazydocker" "ufw-docker" "qt-heif-image-plugin" "luajit-tiktoken-bin" "vesktop")
   for pkg in "${packages[@]}"; do
     yay -S --noconfirm "${pkg}"
   done
