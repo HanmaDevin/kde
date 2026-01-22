@@ -13,8 +13,6 @@ installPackages() {
     sudo pacman -S --needed --noconfirm "${pkg}"
   done
 
-  sudo pacman -Rns --noconfirm "gnome-console" "epiphany"
-
   rustup default stable
 }
 
