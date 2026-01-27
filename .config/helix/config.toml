@@ -1,0 +1,36 @@
+theme = "tokyonight_storm"
+
+[editor]
+line-number = "relative"
+mouse = false
+scrolloff = 20
+true-color = true
+bufferline = "multiple"
+popup-border = "all"
+auto-format = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-progress-messages = true
+display-inlay-hints = true
+
+[editor.indent-guides]
+render = true
+character = "╎"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+max-wrap = 25 # increase value to reduce forced mid-word wrapping
+max-indent-retain = 0
+wrap-indicator = ""  # set wrap-indicator to "" to hide it
+
+[keys.normal]
+C-s = ":w"
+C-w = ":buffer-close"
+C-v = [":clipboard-paste-after"]
+esc = ["collapse_selection", "keep_primary_selection"]

@@ -1,0 +1,51 @@
+[[language]]
+name = "bash" 
+formatter = { command = "beautysh", args = ["--indent-size", "2", "--variable-style", "braces", "-s", "paronly", "-"] }
+auto-format = true 
+
+[[language]]
+name = "c" 
+formatter = { command = "clang-format", args = ["--style=Google"] }
+auto-format = true 
+
+[[language]]
+name = "cpp" 
+formatter = { command = "clang-format", args = ["--style=Google"] }
+auto-format = true 
+
+[[language]]
+name = "css" 
+formatter = { command = "prettier", args = ["--parser", "css"] }
+auto-format = true 
+
+[[language]]
+name = "scss" 
+formatter = { command = "prettier", args = ["--parser", "scss"] }
+auto-format = true 
+
+
+[[language]]
+name = "go" 
+formatter = { command = "gofmt" }
+auto-format = true 
+
+[[language]]
+name = "html" 
+formatter = { command = "prettier", args = ["--parser", "html"] }
+auto-format = true 
+
+[[language]]
+name = "java" 
+formatter = { command = "google-java-format", args = ["-"] }
+auto-format = true 
+
+[[language]]
+name = "json" 
+formatter = { command = "jq" }
+auto-format = true 
+
+[[language]]
+name = "python" 
+formatter = { command = "black", args = ["-"] }
+auto-format = true 
+
