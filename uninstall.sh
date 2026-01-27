@@ -1,9 +1,7 @@
 #!/usr/bin/env bash
 
-packages=("ark" "dolphin" "dolphin-plugins" "dragon" "elisa" "ffmpegthumbs" "isoimagewriter" "konsole" "okular" "plasma")
+packages=("ark" "dolphin" "dolphin-plugins" "dragon" "elisa" "ffmpegthumbs" "isoimagewriter" "konsole" "okular" "plasma" "kio-extras")
 
-for pkg in "${packages[@]}"; do
-  sudo pacman -Rns --noconfirm "${pkg}"
-done
+sudo pacman -Rns --noconfirm "${packages[@]}"
 
 yay -Rns konsave
